@@ -26,6 +26,7 @@
         @include('snippets.header')
         @yield('content')
         <!-- Scripts -->
+        @include('snippets.footer')
         <script src="{{asset('js/all.js ')}}"></script>
         <script>
             new WOW().init();
