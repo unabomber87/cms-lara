@@ -10,9 +10,9 @@ Cms lara is a cms base on laravel voyager
 
 ## Installation
 
-clone repo : git clone https://github.com/unabomber87/cms-lara.git
-install composer dependencies : composer install
-visite BASE_URL/001/admin for backoffice
+clone repo : git clone https://github.com/unabomber87/cms-lara.git <br>
+install composer dependencies : composer install <br>
+visite BASE_URL/001/admin for backoffice <br>
 
 ## License
 
