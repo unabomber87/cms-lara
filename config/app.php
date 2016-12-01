@@ -181,6 +181,8 @@ return [
 		//voyager
 		TCG\Voyager\VoyagerServiceProvider::class,
 
+		//menugen
+		'App\Providers\MenuGenServiceProvider',
 	],
 
 	/*
@@ -228,7 +230,7 @@ return [
 		'URL' => Illuminate\Support\Facades\URL::class,
 		'Validator' => Illuminate\Support\Facades\Validator::class,
 		'View' => Illuminate\Support\Facades\View::class,
-
+		'MenuGen' => 'App\Services\MenuGenFacade',
 	],
 
 ];

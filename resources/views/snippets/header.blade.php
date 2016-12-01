@@ -28,16 +28,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="link-effect-7" id="link-effect-7">
-						<ul class="nav navbar-nav">
-							<li class="active act"><a href="index.html">Home</a></li>
-							<li><a href="about.html">About</a></li>
-							<li><a href="features.html">Features</a></li>
-							<li><a href="travel.html">Travel</a></li>
-							<li><a href="fashion.html">Fashion</a></li>
-							<li><a href="music.html">Music</a></li>
-							<li><a href="codes.html">Codes</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
+						{!!MenuGen::display('main')!!}
 					</nav>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -58,7 +49,7 @@
 <div class="header-bottom">
 	<div class="container">
 		<div class="logo wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-			<h1><a href="index.html">mY BLOG</a></h1>
+			<h1><a href="index.html">MY BLOG</a></h1>
 			<p><label class="of"></label>LET'S MAKE SOME CODE<label class="on"></label></p>
 		</div>
 	</div>
