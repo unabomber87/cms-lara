@@ -17,11 +17,14 @@ elixir((mix) => {
     mix.styles([
 			    'bootstrap.css',
 			    'style.css',
-			    'animate.min.css'
+			    'animate.min.css',
+			    'pace.css',
+			    'custom.css'
 				])
 				.scripts([
 			    'jquery-1.11.1.min.js', 
 			    'bootstrap.min.js',
-			    'wow.min.js'
+			    'wow.min.js',
+			    'pace.js'
 				])
 });

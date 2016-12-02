@@ -31,5 +31,6 @@
         <script>
             new WOW().init();
         </script>
+        @yield('custom_javascript')
     </body>
 </html>
