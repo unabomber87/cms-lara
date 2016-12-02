@@ -47,6 +47,13 @@ sudo chmod -R 777 storage/framework/sessions/
 
 visite BASE_URL/001/admin for backoffice <br>
 
+you can login with the following login credentials:
+
+```
+**email:** admin@admin.com
+**password:** password
+```
+
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The cms lara is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
