@@ -69,9 +69,9 @@ return [
 		'testing' => [
 			'driver' => 'mysql',
 			'host' => env('DB_TEST_HOST', 'localhost'),
-			'database' => env('DB_TEST_DATABASE', 'homestead_test'),
-			'username' => env('DB_TEST_USERNAME', 'homestead'),
-			'password' => env('DB_TEST_PASSWORD', 'secret'),
+			'database' => env('DB_TEST_DATABASE', 'voyager_test'),
+			'username' => env('DB_TEST_USERNAME', 'root'),
+			'password' => env('DB_TEST_PASSWORD', 'root'),
 			'charset' => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix' => '',
