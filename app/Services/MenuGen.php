@@ -60,7 +60,7 @@ class MenuGen extends Menu
      *
      * @return string
      */
-    public static function buildOutput($menuItems, $output, $options, Request $request)
+    public static function buildOutput($menuItems, $output, $options, Request $request, $child = null)
     {
         if (empty($output)) {
             $output = '<ul class="nav navbar-nav">';
