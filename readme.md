@@ -1,8 +1,5 @@
 
-
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-</p>
+[![Build Status](https://travis-ci.org/unabomber87/cms-lara.svg?branch=master)](https://travis-ci.org/unabomber87/cms-lara)
 
 ## About Cms Lara
 
