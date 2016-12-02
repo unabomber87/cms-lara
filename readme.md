@@ -6,7 +6,7 @@
 
 ## About Cms Lara
 
-Cms lara is a cms base on laravel voyager
+Cms lara is a cms based on laravel voyager
 
 ## Installation
 
