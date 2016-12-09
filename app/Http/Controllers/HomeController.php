@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use TCG\Voyager\Models\Post;
 
 class HomeController extends Controller
 {
@@ -11,7 +12,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -21,6 +22,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // get last featured post
+        $feature = Post::where('status', 'PUBLISHED')->where('featured', 1)->orderBy('created_at', 'desc')->first();
+        // get last 5 posts
+        $posts = Post::where('id', '!=' , $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(5)->get();
+        dd($posts);
+        return view('welcome', ['feature' => $feature]);
     }
 }
