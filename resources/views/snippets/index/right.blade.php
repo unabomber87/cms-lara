@@ -7,9 +7,10 @@
 			</form>
 		</div>
 		<h4>Popular Posts </h4>
+		@foreach($merged_posts as $post)
 		<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
 			<div class="blog-grid-left">
-				<a href="singlepage.html"><img src="images/t2.jpg" class="img-responsive" alt=""></a>
+				<a href="singlepage.html"><img src="{{URL::to('storage')}}/{{$post->image}}" class="img-responsive" alt=""></a>
 			</div>
 			<div class="blog-grid-right">
 
@@ -17,46 +18,9 @@
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-		<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-			<div class="blog-grid-left">
-				<a href="singlepage.html"><img src="images/m2.jpg" class="img-responsive" alt=""></a>
-			</div>
-			<div class="blog-grid-right">
+		@endforeach
 
-				<h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-			<div class="blog-grid-left">
-				<a href="singlepage.html"><img src="images/f2.jpg" class="img-responsive" alt=""></a>
-			</div>
-			<div class="blog-grid-right">
 
-				<h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-			<div class="blog-grid-left">
-				<a href="singlepage.html"><img src="images/t3.jpg" class="img-responsive" alt=""></a>
-			</div>
-			<div class="blog-grid-right">
-
-				<h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
-		<div class="blog-grids wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
-			<div class="blog-grid-left">
-				<a href="singlepage.html"><img src="images/m3.jpg" class="img-responsive" alt=""></a>
-			</div>
-			<div class="blog-grid-right">
-
-				<h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
 		<div class="insta wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
 			<h4>Instagram</h4>
 			<ul>
