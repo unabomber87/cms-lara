@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use TCG\Voyager\Models\Post;
+use Thujohn\Twitter\Facades\Twitter;
 
 class HomeController extends Controller
 {
@@ -38,5 +39,11 @@ class HomeController extends Controller
             'three_posts' => $three_posts,
             'merged_posts' => $merged_posts
         ]);
+    }
+
+    public function tweet(){
+        //$tweets = Twitter::getUserTimeline(['screen_name' => 'aziz_la7', 'count' => 20, 'format' => 'json']);
+        $tweets = Twitter::getSearch(array('q'  => 'laravel', 'count' => 20));
+        dd($tweets->statuses[0]);
     }
 }
