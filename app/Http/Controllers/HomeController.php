@@ -41,9 +41,10 @@ class HomeController extends Controller
         ]);
     }
 
-    public function tweet(){
+    public function tweet()
+    {
         //$tweets = Twitter::getUserTimeline(['screen_name' => 'aziz_la7', 'count' => 20, 'format' => 'json']);
-        $tweets = Twitter::getSearch(array('q'  => 'laravel', 'count' => 20));
+        $tweets = Twitter::getSearch(['q'  => 'laravel', 'count' => 20]);
         dd($tweets->statuses[0]);
     }
 }
