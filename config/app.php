@@ -183,6 +183,9 @@ return [
 
         //menugen
         'App\Providers\MenuGenServiceProvider',
+
+        //twitter api
+        'Thujohn\Twitter\TwitterServiceProvider',
     ],
 
     /*
@@ -231,6 +234,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'MenuGen' => 'App\Services\MenuGenFacade',
+        'Twitter' => 'Thujohn\Twitter\Facades\Twitter',
     ],
 
 ];

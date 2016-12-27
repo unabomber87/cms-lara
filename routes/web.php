@@ -12,4 +12,5 @@
  */
 
 Route::get('/', 'HomeController@index');
+Route::get('/tweeter', 'HomeController@tweet');
 
