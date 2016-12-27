@@ -14,7 +14,7 @@
 			</div>
 			<div class="blog-grid-right">
 
-				<h5><a href="singlepage.html">Pellentesque dui Maecenas male</a> </h5>
+				<h5><a href="singlepage.html">{{$post->title}}</a> </h5>
 			</div>
 			<div class="clearfix"> </div>
 		</div>

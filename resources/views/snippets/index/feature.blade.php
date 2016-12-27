@@ -4,7 +4,7 @@
 	</div>
 	<h3><a href="singlepage.html">{{$feature->title}}</a></h3>
 	<h6>BY <a href="singlepage.html">ADAM ROSE </a>JULY 10 2016.</h6>
-	{!!$feature->body!!}
+	{!! str_limit($feature->body, $limit = 150, $end = '...') !!}
 	<div class="bht1">
 		<a href="#{{$feature->slug}}">Continue Reading</a>
 	</div>
