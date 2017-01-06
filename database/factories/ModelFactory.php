@@ -22,3 +22,17 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(TCG\Voyager\Models\Post::class, function (Faker\Generator $faker) {
+    return [
+        'author_id' => 1,
+        'title' => $faker->name,
+        'body' => $faker->text($maxNbChars = 200),
+        'status' => 'PUBLISHED',
+        'excerpt' => 'this is an excerpt',
+        'slug' => 'this-is-a-slug',
+        'meta_description' => 'meta desc',
+        'meta_keywords' => 'key1, key2',
+        'featured' => 1,
+    ];
+});
