@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 
 class CreateDataTypesTable extends Migration
 {
@@ -22,6 +22,7 @@ class CreateDataTypesTable extends Migration
             $table->string('icon');
             $table->string('model_name')->nullable();
             $table->string('description')->nullable();
+            $table->boolean('generate_permissions')->default(false);
             $table->timestamps();
         });
 

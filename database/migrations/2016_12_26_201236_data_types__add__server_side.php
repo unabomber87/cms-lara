@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRolesTable extends Migration
+class DataTypesAddServerSide extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,8 @@ class CreateRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('roles', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->unique();
-            $table->string('display_name');
-            $table->timestamps();
+        Schema::table('data_types', function (Blueprint $table) {
+            $table->tinyInteger('server_side')->default(0)->after('generate_permissions');
         });
     }
 
@@ -28,6 +25,8 @@ class CreateRolesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('roles');
+        Schema::table('data_types', function (Blueprint $table) {
+            $table->dropColumn('server_side');
+        });
     }
 }

@@ -14,3 +14,7 @@
 Route::get('/', 'HomeController@index');
 Route::get('/tweeter', 'HomeController@tweet');
 
+Route::group(['prefix' => '001'], function () {
+    Voyager::routes();
+});
+

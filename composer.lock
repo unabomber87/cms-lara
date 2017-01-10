@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ffcf36bbbff2f3fa1f5d4455a37cdf5a",
+    "content-hash": "bd154a6e002d6382d9a284ea4f886378",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -829,16 +829,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.28",
+            "version": "v5.3.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "a64fc4f8958091ca39623b2e8c8f173cb34fa47a"
+                "reference": "6fd76dec90466dc3f703d8df72e38130f2ee6a32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/a64fc4f8958091ca39623b2e8c8f173cb34fa47a",
-                "reference": "a64fc4f8958091ca39623b2e8c8f173cb34fa47a",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6fd76dec90466dc3f703d8df72e38130f2ee6a32",
+                "reference": "6fd76dec90466dc3f703d8df72e38130f2ee6a32",
                 "shasum": ""
             },
             "require": {
@@ -855,7 +855,7 @@
                 "php": ">=5.6.4",
                 "psy/psysh": "0.7.*|0.8.*",
                 "ramsey/uuid": "~3.0",
-                "swiftmailer/swiftmailer": "~5.1",
+                "swiftmailer/swiftmailer": "~5.4",
                 "symfony/console": "3.1.*",
                 "symfony/debug": "3.1.*",
                 "symfony/finder": "3.1.*",
@@ -953,7 +953,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-12-15T18:03:17+00:00"
+            "time": "2017-01-06T14:33:56+00:00"
         },
         {
             "name": "league/flysystem",
@@ -2394,16 +2394,16 @@
         },
         {
             "name": "tcg/voyager",
-            "version": "v0.9.35",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/the-control-group/voyager.git",
-                "reference": "5f067248be5a93acec00a4297d4c8ae3891340e4"
+                "reference": "4a18590c635f4629c9247061c32b187fb3ce8867"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/5f067248be5a93acec00a4297d4c8ae3891340e4",
-                "reference": "5f067248be5a93acec00a4297d4c8ae3891340e4",
+                "url": "https://api.github.com/repos/the-control-group/voyager/zipball/4a18590c635f4629c9247061c32b187fb3ce8867",
+                "reference": "4a18590c635f4629c9247061c32b187fb3ce8867",
                 "shasum": ""
             },
             "require": {
@@ -2412,6 +2412,7 @@
                 "intervention/image": "^2.3"
             },
             "require-dev": {
+                "laravel/framework": "~5.3.8",
                 "orchestra/testbench": "~3.3.0",
                 "phpunit/phpcov": "~3.0",
                 "phpunit/phpunit": "~5.0"
@@ -2439,7 +2440,7 @@
                 "laravel",
                 "panel"
             ],
-            "time": "2016-12-07T09:57:41+00:00"
+            "time": "2017-01-08T12:02:35+00:00"
         },
         {
             "name": "themattharris/tmhoauth",
