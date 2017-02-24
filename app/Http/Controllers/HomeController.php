@@ -26,6 +26,7 @@ class HomeController extends Controller
     {
         // get last featured post
         $feature = Post::where('status', 'PUBLISHED')->where('featured', 1)->orderBy('created_at', 'desc')->first();
+
         // get last 5 posts
         $two_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(2)->get();
 

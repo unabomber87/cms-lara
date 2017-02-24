@@ -23,10 +23,15 @@ class MenuGenServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app['menugen'] = $this->app->share(function ($app) {
-            // $session = $app['session'];
-            // $events = $app['events'];
+        // $this->app['menugen'] = $this->app->share(function ($app) {
+        //     // $session = $app['session'];
+        //     // $events = $app['events'];
+        //     return new MenuGen();
+        // });
+
+        $this->app->singleton('menugen', function($app) {
             return new MenuGen();
         });
+
     }
 }

@@ -18,9 +18,9 @@ class ExampleTest extends TestCase
         //$user = factory(User::class)->create();
         //var_dump($user);
         $post = factory(Post::class)->create();
-        $user = factory(User::class, 4)->make();
-        $user = User::all();
-        var_dump($user);
+        //$user = factory(User::class, 4)->make();
+        //$user = User::all();
+        //var_dump($user);
         $this->visit('/')
             ->see('MY BLOG');
     }

@@ -17,7 +17,7 @@ class MenuGen extends Menu
      *
      * @return string
      */
-    public static function display($menuName, $type = null, $options = [])
+    public static function display($menuName, $type = null, array $options = [])
     {
         // GET THE MENU
         $menu = static::where('name', '=', $menuName)->first();
