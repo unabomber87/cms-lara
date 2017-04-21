@@ -24,7 +24,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'id',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'ID',
@@ -42,7 +42,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'author_id',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'Author',
@@ -60,7 +60,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'title',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'Title',
@@ -78,7 +78,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'excerpt',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text_area',
                 'display_name' => 'excerpt',
@@ -96,7 +96,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'body',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'rich_text_box',
                 'display_name' => 'Body',
@@ -114,7 +114,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'image',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'image',
                 'display_name' => 'Post Image',
@@ -156,7 +156,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'slug',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'slug',
@@ -174,7 +174,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'meta_description',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text_area',
                 'display_name' => 'meta_description',
@@ -192,7 +192,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'meta_keywords',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text_area',
                 'display_name' => 'meta_keywords',
@@ -210,7 +210,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'status',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'select_dropdown',
                 'display_name' => 'status',
@@ -235,7 +235,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'created_at',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -253,7 +253,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'updated_at',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -271,7 +271,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $pageDataType->id,
             'field'        => 'id',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'id',
@@ -289,7 +289,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $pageDataType->id,
             'field'        => 'author_id',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'author_id',
@@ -307,7 +307,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $pageDataType->id,
             'field'        => 'title',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'title',
@@ -325,7 +325,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $pageDataType->id,
             'field'        => 'excerpt',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text_area',
                 'display_name' => 'excerpt',
@@ -343,7 +343,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $pageDataType->id,
             'field'        => 'body',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'rich_text_box',
                 'display_name' => 'body',
@@ -361,7 +361,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'slug',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'slug',
@@ -379,7 +379,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'meta_description',
                 ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'meta_description',
@@ -397,7 +397,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'meta_keywords',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'meta_keywords',
@@ -415,7 +415,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'status',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'select_dropdown',
                 'display_name' => 'status',
@@ -439,7 +439,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'created_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -456,7 +456,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'updated_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -473,7 +473,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $pageDataType->id,
                     'field'        => 'image',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'image',
                 'display_name' => 'image',
@@ -490,7 +490,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'id',
@@ -507,7 +507,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'name',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'name',
@@ -524,7 +524,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'email',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'email',
@@ -541,7 +541,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'password',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'password',
                 'display_name' => 'password',
@@ -558,7 +558,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'remember_token',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'remember_token',
@@ -575,7 +575,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'created_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -592,7 +592,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'updated_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -609,7 +609,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'avatar',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'image',
                 'display_name' => 'avatar',
@@ -626,7 +626,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $menuDataType->id,
                     'field'        => 'id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'id',
@@ -643,7 +643,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $menuDataType->id,
                     'field'        => 'name',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'name',
@@ -660,7 +660,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $menuDataType->id,
                     'field'        => 'created_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -677,7 +677,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $menuDataType->id,
                     'field'        => 'updated_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -694,7 +694,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'id',
@@ -711,7 +711,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'parent_id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'parent_id',
@@ -728,7 +728,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'order',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'order',
@@ -748,7 +748,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'name',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'name',
@@ -765,7 +765,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'slug',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'slug',
@@ -782,7 +782,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'created_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -799,7 +799,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $categoryDataType->id,
                     'field'        => 'updated_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -816,7 +816,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $roleDataType->id,
                     'field'        => 'id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'PRI',
                 'display_name' => 'id',
@@ -833,7 +833,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $roleDataType->id,
                     'field'        => 'name',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'Name',
@@ -850,7 +850,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $roleDataType->id,
                     'field'        => 'created_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'created_at',
@@ -867,7 +867,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $roleDataType->id,
                     'field'        => 'updated_at',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'timestamp',
                 'display_name' => 'updated_at',
@@ -884,7 +884,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $roleDataType->id,
                     'field'        => 'display_name',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'Display Name',
@@ -901,7 +901,7 @@ class DataRowsTableSeeder extends Seeder
             'data_type_id' => $postDataType->id,
             'field'        => 'seo_title',
         ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'seo_title',
@@ -918,7 +918,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $postDataType->id,
                     'field'        => 'featured',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'checkbox',
                 'display_name' => 'featured',
@@ -935,7 +935,7 @@ class DataRowsTableSeeder extends Seeder
                     'data_type_id' => $userDataType->id,
                     'field'        => 'role_id',
             ]);
-        if (!$dataRow->exists) {
+        if (! $dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
                 'display_name' => 'role_id',

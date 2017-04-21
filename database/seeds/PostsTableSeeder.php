@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use TCG\Voyager\Models\Post;
+use Illuminate\Database\Seeder;
 
 class PostsTableSeeder extends Seeder
 {
@@ -15,7 +15,7 @@ class PostsTableSeeder extends Seeder
         $post = Post::firstOrNew([
             'slug' => 'lorem-ipsum-post',
         ]);
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'            => 'Lorem Ipsum Post',
                 'author_id'        => 0,
@@ -34,7 +34,7 @@ class PostsTableSeeder extends Seeder
         $post = Post::firstOrNew([
             'slug'             => 'my-sample-post',
         ]);
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'     => 'My Sample Post',
                 'author_id' => 0,
@@ -55,7 +55,7 @@ class PostsTableSeeder extends Seeder
         $post = Post::firstOrNew([
             'slug'             => 'latest-post',
         ]);
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'            => 'Latest Post',
                 'author_id'        => 0,
@@ -74,7 +74,7 @@ class PostsTableSeeder extends Seeder
         $post = Post::firstOrNew([
             'slug'             => 'yarr-post',
         ]);
-        if (!$post->exists) {
+        if (! $post->exists) {
             $post->fill([
                 'title'     => 'Yarr Post',
                 'author_id' => 0,
