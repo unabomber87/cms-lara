@@ -1,7 +1,7 @@
 <?php
 
-use TCG\Voyager\Models\Post;
 use App\User;
+use TCG\Voyager\Models\Post;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ExampleTest extends TestCase

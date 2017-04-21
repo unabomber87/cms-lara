@@ -31,14 +31,13 @@ class HomeController extends Controller
         $three_posts = [];
         $merged_posts = [];
         // get last 5 posts
-        if(!empty($feature)){
+        if (! empty($feature)) {
             $two_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(2)->get();
 
             $three_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(3)->offset(2)->get();
 
-            $merged_posts = $two_posts->merge($three_posts);  
+            $merged_posts = $two_posts->merge($three_posts);
         }
-        
 
         return view('welcome', [
             'feature' => $feature,

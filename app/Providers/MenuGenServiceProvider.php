@@ -29,9 +29,8 @@ class MenuGenServiceProvider extends ServiceProvider
         //     return new MenuGen();
         // });
 
-        $this->app->singleton('menugen', function($app) {
+        $this->app->singleton('menugen', function ($app) {
             return new MenuGen();
         });
-
     }
 }
