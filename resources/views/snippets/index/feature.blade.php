@@ -1,4 +1,5 @@
 <div class="tc-ch wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
+	@if($feature)
 	<div class="tch-img">
 		<a href="#{{$feature->slug}}"><img src="{{URL::to('storage')}}/{{$feature->image}}" class="img-responsive" alt="{{$feature->title}}"></a>
 	</div>
@@ -18,5 +19,6 @@
 		</ul>
 	</div>
 	<div class="clearfix"></div>
+	@endif
 </div>
 <div class="clearfix"></div>

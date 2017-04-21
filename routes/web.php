@@ -18,3 +18,8 @@ Route::group(['prefix' => '001'], function () {
     Voyager::routes();
 });
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

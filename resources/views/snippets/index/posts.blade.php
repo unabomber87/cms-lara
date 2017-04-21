@@ -1,5 +1,5 @@
 <div class="w3ls is-table-row">
-	@foreach ($two_posts as $post)
+	@forelse($two_posts as $post)
 		<div class="col-md-6 w3ls-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
 			<div class="tc-ch">
 				<div class="tch-img">
@@ -20,6 +20,12 @@
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	@endforeach
+	@empty
+		<div class="col-md-6 w3ls-left wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".2s">
+			<div class="tc-ch">
+				No posts available
+			</div>
+		</div>
+	@endforelse
 	<div class="clearfix"></div>
 </div>

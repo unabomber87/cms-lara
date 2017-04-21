@@ -1,4 +1,4 @@
-@foreach($three_posts as $post)	
+@forelse($three_posts as $post)	
 	<div class="wthree">
 		<div class="col-md-6 wthree-left wow fadeInDown col-6"  data-wow-duration=".8s" data-wow-delay=".2s">
 			<div class="tch-img">
@@ -22,4 +22,8 @@
 		</div>
 		<div class="clearfix"></div>
 	</div>
-@endforeach
+@empty
+	<div class="wthree">
+		No posts available
+	</div>
+@endforelse

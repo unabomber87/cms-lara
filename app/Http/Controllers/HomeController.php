@@ -27,12 +27,18 @@ class HomeController extends Controller
         // get last featured post
         $feature = Post::where('status', 'PUBLISHED')->where('featured', 1)->orderBy('created_at', 'desc')->first();
 
+        $two_posts = [];
+        $three_posts = [];
+        $merged_posts = [];
         // get last 5 posts
-        $two_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(2)->get();
+        if(!empty($feature)){
+            $two_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(2)->get();
 
-        $three_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(3)->offset(2)->get();
+            $three_posts = Post::where('id', '!=', $feature->id)->where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(3)->offset(2)->get();
 
-        $merged_posts = $two_posts->merge($three_posts);
+            $merged_posts = $two_posts->merge($three_posts);  
+        }
+        
 
         return view('welcome', [
             'feature' => $feature,

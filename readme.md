@@ -42,6 +42,7 @@ sudo chmod -R 777 bootstrap/cache/
 sudo chmod -R 777 storage/logs/
 sudo chmod -R 777 storage/framework/views/
 sudo chmod -R 777 storage/framework/sessions/
+sudo chmod -R 777 storage/framework/cache/
 ```
 
 visite BASE_URL/001/admin for backoffice <br>
