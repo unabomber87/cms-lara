@@ -45,6 +45,15 @@ sudo chmod -R 777 storage/framework/sessions/
 sudo chmod -R 777 storage/framework/cache/
 ```
 
+Reinit database
+
+```
+php artisan migrate:refresh --seed
+php artisan db:seed --class=InitSeeder
+```
+
+
+
 visite BASE_URL/001/admin for backoffice <br>
 
 you can login with the following login credentials:
