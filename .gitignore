@@ -7,4 +7,5 @@
 Homestead.json
 Homestead.yaml
 .env
-/public/vendor/tcg/voyager/assets/l
+/public/vendor
+/public/template

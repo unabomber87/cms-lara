@@ -32,7 +32,7 @@ php artisan key:generate
 install voyager : 
 
 ```
-php artisan voyager:install
+php artisan voyager:install --with-dummy
 ```
 
 add directory permission
@@ -44,14 +44,6 @@ sudo chmod -R 777 storage/framework/views/
 sudo chmod -R 777 storage/framework/sessions/
 sudo chmod -R 777 storage/framework/cache/
 ```
-
-Reinit database
-
-```
-php artisan migrate:refresh --seed
-php artisan db:seed --class=InitSeeder
-```
-
 
 
 visite BASE_URL/001/admin for backoffice <br>
