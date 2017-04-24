@@ -3,6 +3,7 @@
 use App\User;
 use TCG\Voyager\Models\Post;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class ExampleTest extends TestCase
 {

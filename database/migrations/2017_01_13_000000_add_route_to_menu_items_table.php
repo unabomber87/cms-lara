@@ -14,7 +14,7 @@ class AddRouteToMenuItemsTable extends Migration
     public function up()
     {
         Schema::table('menu_items', function (Blueprint $table) {
-            $table->string('route')->nullable()->default(null);
+            
             $table->text('parameters')->nullable()->default(null);
         });
     }
@@ -27,7 +27,7 @@ class AddRouteToMenuItemsTable extends Migration
     public function down()
     {
         Schema::table('menu_items', function (Blueprint $table) {
-            $table->dropColumn('route');
+
             $table->dropColumn('parameters');
         });
     }

@@ -8,7 +8,7 @@ before_script:
   - mysql -e 'create database voyager_test;'
   - composer self-update
   - composer install --no-interaction
-  - php artisan voyager:install
+  - php artisan voyager:install --with-dummy
   - php artisan key:generate
 
 script:
