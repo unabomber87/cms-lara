@@ -9,3 +9,4 @@ Homestead.yaml
 .env
 /public/vendor
 /public/template
+_ide_helper.php
