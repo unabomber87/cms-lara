@@ -29,6 +29,17 @@ return [
 
     /*
             |--------------------------------------------------------------------------
+            | Enable secure HTTP
+            |--------------------------------------------------------------------------
+            |
+            | This value determines that the HTTPS is enabled or not
+            |
+    */
+
+    'secure' => env('SECURE', false),
+
+    /*
+            |--------------------------------------------------------------------------
             | Application Debug Mode
             |--------------------------------------------------------------------------
             |
@@ -186,6 +197,9 @@ return [
 
         //twitter api
         'Thujohn\Twitter\TwitterServiceProvider',
+
+        //ide helper
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
